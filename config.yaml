@@ -1,5 +1,6 @@
 # Model Configuration
-model_name: microsoft/deberta-v3-small  # Hugging Face model
+# model_name: microsoft/deberta-v3-small  # Hugging Face model
+model_name: lighthouse/mdeberta-v3-base-kor-further # taeminlee/gliner_ko tokenizer
 name: "span level gliner"
 max_width: 12
 hidden_size: 768
