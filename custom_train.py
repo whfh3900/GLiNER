@@ -26,12 +26,12 @@ from transformers.trainer import (
 )
 from transformers import AutoTokenizer
 
-from gliner import GLiNER, GLiNERConfig
-from gliner.data_processing import GLiNERDataset, SpanProcessor, TokenProcessor
-from gliner.data_processing.tokenizer import WordsSplitter
-from gliner.data_processing.collator import DataCollatorWithPadding, DataCollator
-from gliner.utils import load_config_as_namespace
-from gliner.evaluation import get_for_all_path
+from _gliner import GLiNER, GLiNERConfig
+from _gliner.data_processing import GLiNERDataset, SpanProcessor, TokenProcessor
+from _gliner.data_processing.tokenizer import WordsSplitter
+from _gliner.data_processing.collator import DataCollatorWithPadding, DataCollator
+from _gliner.utils import load_config_as_namespace
+from _gliner.evaluation import get_for_all_path
 
 
 def save_top_k_checkpoints(model: GLiNER, save_path: str, checkpoint: int, top_k: int = 5):
